@@ -580,6 +580,7 @@ begin
     info.Width := rect.right - rect.left;
     info.Height := rect.bottom - rect.top;
     info.ExStyle := 0;
+    info.m_bTransparentPainting := TransparentPainting; //++
     FillChar(settings, SizeOf(TCefBrowserSettings), 0);
     settings.size := SizeOf(TCefBrowserSettings);
     GetSettings(settings);

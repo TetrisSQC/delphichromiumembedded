@@ -1505,6 +1505,7 @@ begin
     FillChar(info, SizeOf(info), 0);
 {$IFDEF MSWINDOWS}
     info.m_bWindowRenderingDisabled := True;
+    info.m_bTransparentPainting := TransparentPainting;
 {$ENDIF}
 {$IFDEF MACOS}
     info.m_bHidden := Ord(True);

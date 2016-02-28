@@ -5311,6 +5311,7 @@ function CefGetWebPluginInfoByname(const name: ustring): ICefWebPluginInfo;
 
 var
   CefLibrary: string = {$IFDEF MSWINDOWS}'libcef.dll'{$ELSE}'libcef.dylib'{$ENDIF};
+  TransparentPainting: Boolean = false; //++
   CefCache: ustring = '';
   CefUserAgent: ustring = '';
   CefProductVersion: ustring = '';
